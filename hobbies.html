@@ -40,7 +40,7 @@
           <span class="badge badge-coral">Page 4 • Passions & Pursuits</span>
           <h1 style="margin: 0.75rem 0 1rem;">Interests & <span class="text-gradient">Creative Hobbies</span></h1>
           <p>
-            Beyond academic lectures and business computing assignments at UMSKAL, these three pursuits keep my mind sharp, 
+            Beyond academic lectures and business computing assignments at UMSKAL, these four pursuits keep my mind sharp, 
             my creativity flowing, and my analytical reflexes primed.
           </p>
         </div>
@@ -51,10 +51,11 @@
           <button class="filter-btn" data-filter="gaming">Gaming (PC & Mobile)</button>
           <button class="filter-btn" data-filter="coding">Coding (Java & C++)</button>
           <button class="filter-btn" data-filter="editing">Video & Audio Editing</button>
+          <button class="filter-btn" data-filter="ai">Exploring AI</button>
         </div>
 
-        <!-- Interactive 3-Card Hobby Grid -->
-        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <!-- Interactive 4-Card Hobby Grid -->
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
           
           <!-- Hobby 1: Gaming (Minecraft, Mobile Legends, Valorant) -->
           <div class="hobby-card-interactive" data-category="gaming">
@@ -152,6 +153,38 @@
             </div>
           </div>
 
+          <!-- Hobby 4: Exploring AI (Learning & Enhancing Workflows) -->
+          <div class="hobby-card-interactive" data-category="ai">
+            <div class="hobby-img-header">
+              <img src="images/hobby-ai.jpg" alt="Artificial Intelligence Neural Network and Creative Technology">
+              <span class="card-badge">Intelligent Tech</span>
+            </div>
+            <div class="hobby-body">
+              <span class="badge" style="width: fit-content; margin-bottom: 0.5rem; background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4);">Artificial Intelligence</span>
+              <h3>Exploring & Enhancing AI</h3>
+              <p>
+                Diving into modern artificial intelligence systems, learning advanced prompt crafting, and enhancing personal workflows. 
+                From experimenting with large language models to integrating intelligent tools into software logic and business data analysis, this passion unlocks smarter productivity.
+              </p>
+
+              <div class="hobby-stats-row">
+                <div class="stat-item">
+                  <span class="stat-label">Core Focus</span>
+                  <span class="stat-val">Learning & Prompting</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Mindset</span>
+                  <span class="stat-val">Workflow Enhancement</span>
+                </div>
+              </div>
+
+              <div class="btn-group" style="margin-top: auto;">
+                <button class="btn btn-primary btn-sm" data-modal-target="aiModal">AI Vision 🤖</button>
+                <button class="btn btn-secondary btn-sm" data-toast="Learning and enhancing AI workflows multiplies efficiency and creative problem solving!">AI Insight</button>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- Energy & Passion Synergy Card -->
@@ -159,10 +192,10 @@
           <h2>How My Hobbies Power Business Computing</h2>
           <p>
             Each personal pursuit feeds directly into my academic and professional toolkit in Business Computing: 
-            gaming sharpens strategic composure and spatial logic, Java and C++ strengthen software architecture, and video audio editing elevates digital content delivery.
+            gaming sharpens strategic composure and spatial logic, Java and C++ strengthen software architecture, video audio editing elevates digital content delivery, and exploring AI enhances intelligent workflow automation.
           </p>
 
-          <div class="facts-grid">
+          <div class="facts-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
             <div class="fact-card">
               <span class="number">Gaming</span>
               <span class="desc">Minecraft, MLBB & Valorant</span>
@@ -174,6 +207,10 @@
             <div class="fact-card">
               <span class="number">Editing</span>
               <span class="desc">After Effects Video & Audio Sync</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">Exploring AI</span>
+              <span class="desc">Learning, Prompting & Enhancing</span>
             </div>
           </div>
 
@@ -242,6 +279,24 @@
         <li>Keyframe motion design and kinetic typography animations</li>
         <li>Dynamic video montage cuts matched precisely to musical beats and audio cues</li>
         <li>Layered audio editing, sound effect integration, and balanced audio mixing</li>
+      </ul>
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="aiModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">×</button>
+      <span class="badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4);">AI Exploration</span>
+      <h3 style="margin: 1rem 0 0.75rem;">Exploring AI: Learning, Applying & Enhancing</h3>
+      <p style="margin-bottom: 1rem; color: var(--text-muted);">
+        Artificial intelligence is transforming the way we learn, code, and operate in business computing. 
+        My journey focuses on mastering modern generative tools, understanding model behavior, and enhancing everyday workflows:
+      </p>
+      <ul style="padding-left: 1.25rem; margin-bottom: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+        <li>Exploring foundational LLMs, intelligent reasoning engines, and assistive developer tooling</li>
+        <li>Learning prompt engineering to craft precise, structured, and reproducible context for tasks</li>
+        <li>Enhancing software development velocity, automating repetitive tasks, and powering smarter e-commerce analytics</li>
       </ul>
       <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
     </div>
