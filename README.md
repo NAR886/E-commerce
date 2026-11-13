@@ -9,7 +9,7 @@
 - **Programme:** Bachelor of Information Technology with Honours (Business Computing) [HC13]
 - **Course Code:** IE12103 E-Commerce (Semester 1 2026/2027)
 - **Hometown:** Beaufort, Sabah
-- **Hobbies:** Gaming, Coding, Video & Graphic Editing
+- **Hobbies:** Gaming (Valorant, PC & Mobile), Coding (Java & C++), Video & Audio Editing (Adobe After Effects)
 - **Grade Weight:** 5% (10 Marks)
 
 ---
@@ -29,7 +29,7 @@ Once GitHub Pages is enabled on this repository, your live URL is:
 3. **Page 3 (Your Hometown):** [`hometown.html`](hometown.html)
    - 100% authentic documented Beaufort, Sabah photos: Stesen Keretapi Beaufort (Sabah State Railway), famous Beaufort Mee, Padas River White Water Rafting, Klias Wetland Proboscis Wildlife, historic Beaufort town wooden shophouses, and Weston Wetland settlement.
 4. **Page 4 (Interests & Hobbies):** [`hobbies.html`](hobbies.html)
-   - 3 focused hobbies: **Gaming**, **Coding & Web Development**, and **Video & Graphic Editing**, with interactive category filters, statistic pills, and detail modals.
+   - 3 focused passions: **Gaming (Valorant on PC & Mobile)**, **Coding (Java, C++ & OOP Logic)**, and **Video & Audio Editing (Adobe After Effects)**, with interactive category filters, statistic pills, and detail modals.
 
 ---
 
