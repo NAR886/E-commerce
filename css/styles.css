@@ -77,7 +77,7 @@ body {
   flex-direction: column;
 }
 
-/* Glowing Neon Nebula Background Atmosphere */
+/* Glowing Neon Nebula Background Atmosphere (Live Pulsing & Drifting) */
 body::before {
   content: "";
   position: fixed;
@@ -85,11 +85,12 @@ body::before {
   right: -10vw;
   width: 50vw;
   height: 50vw;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.18) 0%, rgba(236, 72, 153, 0.1) 45%, transparent 70%);
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.22) 0%, rgba(236, 72, 153, 0.12) 45%, transparent 70%);
   border-radius: 50%;
   z-index: -1;
   pointer-events: none;
   filter: blur(60px);
+  animation: pulseNebula1 12s ease-in-out infinite alternate;
 }
 
 body::after {
@@ -99,11 +100,35 @@ body::after {
   left: -12vw;
   width: 55vw;
   height: 55vw;
-  background: radial-gradient(circle, rgba(0, 242, 254, 0.16) 0%, rgba(59, 130, 246, 0.08) 50%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.2) 0%, rgba(59, 130, 246, 0.1) 50%, transparent 70%);
   border-radius: 50%;
   z-index: -1;
   pointer-events: none;
   filter: blur(70px);
+  animation: pulseNebula2 16s ease-in-out infinite alternate;
+}
+
+@keyframes pulseNebula1 {
+  0% { transform: scale(1) translate(0, 0); opacity: 0.8; }
+  50% { transform: scale(1.15) translate(-3vw, 2vw); opacity: 1; }
+  100% { transform: scale(0.95) translate(2vw, -2vw); opacity: 0.85; }
+}
+
+@keyframes pulseNebula2 {
+  0% { transform: scale(1) translate(0, 0); opacity: 0.75; }
+  50% { transform: scale(1.2) translate(3vw, -2vw); opacity: 1; }
+  100% { transform: scale(0.9) translate(-2vw, 3vw); opacity: 0.8; }
+}
+
+/* Interactive Live Canvas Background */
+#cyberCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Subtle Cyber Grid Matrix Texture */
@@ -691,29 +716,38 @@ img {
   font-size: 0.95rem;
 }
 
-/* --- About You Page Layout --- */
+/* --- About You Page Layout (Sleek Profile Size) --- */
 .about-hero {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 4rem;
+  grid-template-columns: 310px 1fr;
+  gap: 3.5rem;
   align-items: center;
 }
 
 .about-photo-wrapper {
   position: relative;
+  max-width: 310px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .about-photo-frame {
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 0 35px rgba(168, 85, 247, 0.3), var(--shadow-lg);
-  border: 2px solid rgba(168, 85, 247, 0.4);
+  box-shadow: 0 0 30px rgba(0, 242, 254, 0.35), 0 0 50px rgba(168, 85, 247, 0.2);
+  border: 2px solid rgba(0, 242, 254, 0.5);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.about-photo-frame:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 40px rgba(236, 72, 153, 0.5);
 }
 
 .about-photo-frame img {
   width: 100%;
-  height: 480px;
+  height: 330px;
   object-fit: cover;
 }
 
@@ -1469,22 +1503,22 @@ img {
 
   /* About You Print Rules */
   .about-hero {
-    grid-template-columns: 240px 1fr !important;
-    gap: 1.75rem !important;
+    grid-template-columns: 200px 1fr !important;
+    gap: 1.5rem !important;
     align-items: flex-start !important;
   }
 
   .about-photo-wrapper {
-    max-width: 240px !important;
+    max-width: 200px !important;
   }
 
   .about-photo-frame {
     box-shadow: none !important;
-    border: 1px solid rgba(168, 85, 247, 0.5) !important;
+    border: 1px solid rgba(0, 242, 254, 0.5) !important;
   }
 
   .about-photo-frame img {
-    height: 280px !important;
+    height: 220px !important;
     object-fit: cover !important;
   }
 
