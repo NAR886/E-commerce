@@ -1205,7 +1205,7 @@ img {
   margin-top: auto;
   background: #040711;
   color: #94a3b8;
-  padding: 4.5rem 0 2rem;
+  padding: 2.25rem 0 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -1501,15 +1501,15 @@ img {
     gap: 1.25rem !important;
   }
 
-  /* About You Print Rules */
+  /* About You Print Rules (Single Page Fit) */
   .about-hero {
-    grid-template-columns: 200px 1fr !important;
-    gap: 1.5rem !important;
+    grid-template-columns: 180px 1fr !important;
+    gap: 1.25rem !important;
     align-items: flex-start !important;
   }
 
   .about-photo-wrapper {
-    max-width: 200px !important;
+    max-width: 180px !important;
   }
 
   .about-photo-frame {
@@ -1518,8 +1518,19 @@ img {
   }
 
   .about-photo-frame img {
-    height: 220px !important;
+    height: 200px !important;
     object-fit: cover !important;
+  }
+
+  .about-info-content h1 {
+    font-size: 1.8rem !important;
+    margin: 0.35rem 0 0.5rem !important;
+  }
+
+  .about-info-content p {
+    font-size: 0.86rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.6rem !important;
   }
 
   .about-badge-card {
@@ -1528,17 +1539,32 @@ img {
 
   .info-pills {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.5rem !important;
-    margin: 1rem 0 !important;
+    gap: 0.4rem !important;
+    margin: 0.6rem 0 !important;
   }
 
   .info-pill-item {
-    padding: 0.5rem 0.75rem !important;
+    padding: 0.35rem 0.65rem !important;
     background: #1e293b !important;
   }
 
+  .info-pill-item .label {
+    font-size: 0.68rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+
   .info-pill-item .value {
-    font-size: 0.9rem !important;
+    font-size: 0.82rem !important;
+  }
+
+  .skill-tag {
+    padding: 0.25rem 0.65rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  .btn {
+    padding: 0.45rem 1rem !important;
+    font-size: 0.82rem !important;
   }
 
   .timeline {
@@ -1589,16 +1615,10 @@ img {
   .site-footer {
     break-inside: avoid !important;
     page-break-inside: avoid !important;
-    padding: 2rem 0 1rem !important;
+    padding: 1.25rem 0 !important;
     background: #030712 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1.4fr 1fr 1fr !important;
-    gap: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
   }
 
   .modal-overlay, .toast-notice {
