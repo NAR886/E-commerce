@@ -1,4 +1,4 @@
-# IE12103 E-Commerce — Practical Activity 2
+# IE12103 E-Commerce: Practical Activity 2
 ## Topic: "Me, My Hometown and Interest" Website
 ### Theme: Cyber Dark Neon
 
