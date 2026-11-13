@@ -25,7 +25,7 @@ Once GitHub Pages is enabled on this repository, your live URL is:
 1. **Page 1 (Home):** [`index.html`](index.html)
    - Cyber Dark Neon hero banner, navigation hub, quick overview cards to the other 3 pages, course alignment facts, interactive modal & notifications.
 2. **Page 2 (About You):** [`about.html`](about.html)
-   - Student portrait photograph, academic information pills (Name, Matric, Faculty, Degree at UMSKAL), core competencies & skills, learning milestones timeline, interactive philosophy modal.
+   - Student portrait photograph, academic information pills (Name, Matric, Faculty, Degree at UMSKAL), core competencies & skills, and interactive philosophy modal.
 3. **Page 3 (Your Hometown):** [`hometown.html`](hometown.html)
    - 100% authentic documented Beaufort, Sabah photos: Stesen Keretapi Beaufort (Sabah State Railway), famous Beaufort Mee, Padas River White Water Rafting, Klias Wetland Proboscis Wildlife, historic Beaufort town wooden shophouses, and Weston Wetland settlement.
 4. **Page 4 (Interests & Hobbies):** [`hobbies.html`](hobbies.html)
