@@ -10,12 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="cyber-grid-overlay"></div>
 
   <!-- Navigation Bar -->
   <header class="site-header">
     <div class="container navbar">
       <a href="index.html" class="brand-logo">
-        <span class="logo-icon">✨</span>
+        <span class="logo-icon">⚡</span>
         <span>My<span class="text-gradient">Space</span></span>
       </a>
 
@@ -38,8 +39,8 @@
           <span class="badge badge-coral">Page 4 • Passions & Pursuits</span>
           <h1 style="margin: 0.75rem 0 1rem;">Interests & <span class="text-gradient">Creative Hobbies</span></h1>
           <p>
-            Beyond lectures and computing assignments at UMSKAL, these four pursuits keep my mind sharp, 
-            my creativity flowing, and my body active.
+            Beyond academic lectures and business computing assignments at UMSKAL, these three pursuits keep my mind sharp, 
+            my creativity flowing, and my analytical reflexes primed.
           </p>
         </div>
 
@@ -49,17 +50,16 @@
           <button class="filter-btn" data-filter="gaming">Gaming</button>
           <button class="filter-btn" data-filter="coding">Coding</button>
           <button class="filter-btn" data-filter="editing">Video & Graphic Editing</button>
-          <button class="filter-btn" data-filter="rollerblade">Playing Rollerblade</button>
         </div>
 
-        <!-- Interactive Hobby Cards Grid -->
-        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <!-- Interactive 3-Card Hobby Grid -->
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
           
           <!-- Hobby 1: Gaming -->
           <div class="hobby-card-interactive" data-category="gaming">
             <div class="hobby-img-header">
               <img src="images/hobby-gaming.jpg" alt="Gaming Setup and Controller">
-              <span class="card-badge">Digital Entertainment</span>
+              <span class="card-badge">Cyber Entertainment</span>
             </div>
             <div class="hobby-body">
               <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Tactical Play</span>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Mindset</span>
-                  <span class="stat-val">Logic & Problem Solving</span>
+                  <span class="stat-val">Logic & Architecture</span>
                 </div>
               </div>
 
@@ -151,46 +151,14 @@
             </div>
           </div>
 
-          <!-- Hobby 4: Playing Rollerblade -->
-          <div class="hobby-card-interactive" data-category="rollerblade">
-            <div class="hobby-img-header">
-              <img src="images/hobby-rollerblade.jpg" alt="Inline Skating and Rollerblade">
-              <span class="card-badge">Outdoor Fitness</span>
-            </div>
-            <div class="hobby-body">
-              <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Active Lifestyle</span>
-              <h3>Playing Rollerblade</h3>
-              <p>
-                Cruising on inline skates across smooth park trails, waterfront promenades, and urban circuits. 
-                Rollerblading provides an invigorating cardio workout, building balance, agility, and mental clarity.
-              </p>
-
-              <div class="hobby-stats-row">
-                <div class="stat-item">
-                  <span class="stat-label">Activity Type</span>
-                  <span class="stat-val">Inline Skating</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-label">Benefit</span>
-                  <span class="stat-val">Balance & Agility</span>
-                </div>
-              </div>
-
-              <div class="btn-group" style="margin-top: auto;">
-                <button class="btn btn-primary btn-sm" data-modal-target="rollerbladeModal">Skate Notes 🛼</button>
-                <button class="btn btn-secondary btn-sm" data-toast="Rollerblading delivers a full-body workout while feeling completely liberating!">Skate Vibe</button>
-              </div>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Weekly Energy & Passion Allocation Card -->
+        <!-- Energy & Passion Synergy Card -->
         <div class="facts-box" style="margin-top: 4.5rem;">
-          <h2>How My Hobbies Fuel Business Computing</h2>
+          <h2>How My Hobbies Power Business Computing</h2>
           <p>
-            Each personal interest feeds directly into my academic and professional toolkit in Business Computing: 
-            gaming sharpens strategy, coding executes technical logic, editing elevates digital marketing, and rollerblading keeps me physically energized.
+            Each personal pursuit feeds directly into my academic and professional toolkit in Business Computing: 
+            gaming sharpens tactical strategy, coding executes technical logic, and editing elevates digital marketing.
           </p>
 
           <div class="facts-grid">
@@ -205,10 +173,6 @@
             <div class="fact-card">
               <span class="number">Editing</span>
               <span class="desc">Visual Storytelling & Branding</span>
-            </div>
-            <div class="fact-card">
-              <span class="number">Rollerblade</span>
-              <span class="desc">Agility, Endurance & Balance</span>
             </div>
           </div>
 
@@ -278,30 +242,12 @@
     </div>
   </div>
 
-  <div class="modal-overlay" id="rollerbladeModal">
-    <div class="modal-content">
-      <button class="modal-close-btn" aria-label="Close modal">×</button>
-      <span class="badge">Rollerblade & Skating</span>
-      <h3 style="margin: 1rem 0 0.75rem;">The Freedom of Inline Skating</h3>
-      <p style="margin-bottom: 1rem; color: var(--text-muted);">
-        Putting on rollerblades and gliding down open pavement is my favorite way to disconnect from screens and recharge. 
-        It demands total physical focus, coordination, and confidence.
-      </p>
-      <ul style="padding-left: 1.25rem; margin-bottom: 1.5rem; color: var(--text-muted); line-height: 1.8;">
-        <li>Full-body cardiovascular and core workout</li>
-        <li>Enhances dynamic balance and reflexes</li>
-        <li>Smooth urban exploration on wheels</li>
-      </ul>
-      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
-    </div>
-  </div>
-
   <!-- Global Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3><span>🌟</span> Me, My Hometown & Interest</h3>
+          <h3><span>⚡</span> Me, My Hometown & Interest</h3>
           <p>
             An individual practical web submission for IE12103 E-Commerce, Semester 1 2026/2027. 
             Faculty of Computing and Informatics (FKI), Universiti Malaysia Sabah Kampus Antarabangsa Labuan (UMSKAL).
@@ -326,8 +272,8 @@
         <div class="footer-col">
           <h4>Assignment Specs</h4>
           <ul class="footer-links">
-            <li><span style="color:#cbd5e1;">Hobbies Highlighted:</span> Gaming, Coding, Editing, Rollerblade</li>
-            <li><span style="color:#cbd5e1;">Buttons & Modals:</span> 10+ Interactive elements</li>
+            <li><span style="color:#cbd5e1;">Hobbies Highlighted:</span> Gaming, Coding, Editing</li>
+            <li><span style="color:#cbd5e1;">Theme:</span> Cyber Dark Neon</li>
             <li><span style="color:#cbd5e1;">Separate Page:</span> hobbies.html</li>
             <li><span style="color:#cbd5e1;">Campus:</span> UMSKAL</li>
           </ul>
@@ -336,7 +282,7 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 Freadenly Zulkilfi (BI25110316) - UMSKAL. All rights reserved.</p>
-        <p>Built with Semantic HTML5 & Custom CSS</p>
+        <p>Built with Semantic HTML5 & Cyber Dark Neon CSS</p>
       </div>
     </div>
   </footer>
