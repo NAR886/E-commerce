@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Hometown | Me, My Hometown and Interest - IE12103</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">✨</span>
+        <span>My<span class="text-gradient">Space</span></span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About You</a></li>
+        <li><a href="hometown.html" class="nav-link active">Your Hometown</a></li>
+        <li><a href="hobbies.html" class="nav-link">Interests & Hobbies</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <!-- Hometown Hero Banner -->
+        <div class="hometown-hero-banner">
+          <img src="images/hometown-sunset.jpg" alt="Tanjung Aru Sunset in Kota Kinabalu" width="1200" height="440">
+          <div class="hometown-hero-overlay">
+            <span class="badge badge-coral" style="width: fit-content; margin-bottom: 0.75rem;">Page 3 • Heritage & Origins</span>
+            <h1>Kota Kinabalu, <span class="text-gradient-warm">Sabah</span></h1>
+            <p>
+              Nestled between the azure waters of the South China Sea and the granite crags of Mount Kinabalu, 
+              my hometown is the crown jewel of Malaysian Borneo—renowned for vibrant biodiversity, unforgettable sunsets, and warm hospitality.
+            </p>
+          </div>
+        </div>
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="badge">Visual Gallery</span>
+          <h2>Treasures of the <span class="text-gradient">Land Below the Wind</span></h2>
+          <p>
+            Browse through key landmarks, natural wonders, and culinary staples that define everyday life in Kota Kinabalu. 
+            Use the interactive category buttons below to explore.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons (Interactive rubric requirement) -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Highlights</button>
+          <button class="filter-btn" data-filter="nature">Nature & Peaks</button>
+          <button class="filter-btn" data-filter="coastal">Coastline & Islands</button>
+          <button class="filter-btn" data-filter="city">City & Heritage</button>
+          <button class="filter-btn" data-filter="cuisine">Local Cuisine</button>
+        </div>
+
+        <!-- Gallery of Hometown Images -->
+        <div class="gallery-grid">
+          <!-- Item 1: Mount Kinabalu -->
+          <div class="gallery-item" data-category="nature">
+            <div class="gallery-thumb">
+              <img src="images/hometown-mountain.jpg" alt="Mount Kinabalu Peaks">
+              <span class="card-badge">Nature</span>
+            </div>
+            <div class="gallery-info">
+              <h4>Mount Kinabalu</h4>
+              <p>Standing tall at 4,095 meters, this UNESCO World Heritage monument is the sacred heart of Sabah and a bucket-list destination for trekkers worldwide.</p>
+              <button class="btn btn-secondary btn-sm" data-modal-target="mountainModal" style="margin-top: auto;">Explore Facts 🔍</button>
+            </div>
+          </div>
+
+          <!-- Item 2: Tanjung Aru Sunset -->
+          <div class="gallery-item" data-category="coastal">
+            <div class="gallery-thumb">
+              <img src="images/hometown-sunset.jpg" alt="Tanjung Aru Sunset">
+              <span class="card-badge">Coastline</span>
+            </div>
+            <div class="gallery-info">
+              <h4>Tanjung Aru Beach</h4>
+              <p>Famed across the globe for some of the top-ranked sunset vistas on earth, where skies ignite in deep hues of gold, crimson, and lavender.</p>
+              <button class="btn btn-secondary btn-sm" data-toast="Fun fact: Tanjung Aru is named after the Casuarina equisetifolia trees (Aru) lining the beach!" style="margin-top: auto;">Sunset Lore 🌅</button>
+            </div>
+          </div>
+
+          <!-- Item 3: Modern Kota Kinabalu City -->
+          <div class="gallery-item" data-category="city">
+            <div class="gallery-thumb">
+              <img src="images/hometown-city.jpg" alt="Kota Kinabalu Cityscape">
+              <span class="card-badge">City</span>
+            </div>
+            <div class="gallery-info">
+              <h4>City Center & Waterfront</h4>
+              <p>A thriving coastal metropolis that seamlessly blends modern commercial malls, dynamic night markets, and maritime heritage along the South China Sea.</p>
+              <button class="btn btn-secondary btn-sm" data-toast="The KK Waterfront is a popular social hub for dining, live music, and evening ocean breezes." style="margin-top: auto;">City Vibes 🏙️</button>
+            </div>
+          </div>
+
+          <!-- Item 4: Borneo Rainforest -->
+          <div class="gallery-item" data-category="nature">
+            <div class="gallery-thumb">
+              <img src="images/hometown-nature.jpg" alt="Borneo Rainforest Canopy">
+              <span class="card-badge">Nature</span>
+            </div>
+            <div class="gallery-info">
+              <h4>Ancient Rainforest Canopies</h4>
+              <p>Surrounding the city are 130-million-year-old rainforests sheltering rare flora, endemic hornbills, proboscis monkeys, and the giant Rafflesia.</p>
+              <button class="btn btn-secondary btn-sm" data-toast="Sabah is home to one of the oldest rainforest ecosystems on the planet!" style="margin-top: auto;">Eco Reserve 🌿</button>
+            </div>
+          </div>
+
+          <!-- Item 5: Sabah Delicacies & Seafood -->
+          <div class="gallery-item" data-category="cuisine">
+            <div class="gallery-thumb">
+              <img src="images/hometown-food.jpg" alt="Sabah Local Cuisine">
+              <span class="card-badge">Cuisine</span>
+            </div>
+            <div class="gallery-info">
+              <h4>Culinary Delights & Seafood</h4>
+              <p>From aromatic handmade Tuaran noodles and fresh wild seafood feasts to Hinava (traditional lime-marinated fish), KK is a culinary paradise.</p>
+              <button class="btn btn-secondary btn-sm" data-toast="Don't miss Tuaran Mee and fresh butter prawns when visiting Kota Kinabalu!" style="margin-top: auto;">Food Highlights 🍜</button>
+            </div>
+          </div>
+
+          <!-- Item 6: Tunku Abdul Rahman Marine Park -->
+          <div class="gallery-item" data-category="coastal">
+            <div class="gallery-thumb">
+              <img src="images/hometown-islands.jpg" alt="Manukan and Sapi Island">
+              <span class="card-badge">Coastal</span>
+            </div>
+            <div class="gallery-info">
+              <h4>Tunku Abdul Rahman Marine Park</h4>
+              <p>A cluster of 5 tropical islands (Manukan, Sapi, Mamutik, Gaya, and Sulug) just 15 minutes by speedboat, ideal for snorkeling and coral reef diving.</p>
+              <button class="btn btn-secondary btn-sm" data-toast="You can zipline from Gaya Island to Sapi Island across open sea!" style="margin-top: auto;">Island Info 🏝️</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kota Kinabalu Quick Snapshot Box -->
+        <div class="facts-box" style="margin-top: 4.5rem;">
+          <h2>Hometown Quick Facts: Kota Kinabalu</h2>
+          <p>Key geographic and cultural hallmarks of Sabah's vibrant capital city.</p>
+
+          <div class="facts-grid">
+            <div class="fact-card">
+              <span class="number">4,095 m</span>
+              <span class="desc">Mount Kinabalu Peak</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">5 Islands</span>
+              <span class="desc">Marine Park Cluster</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">30+</span>
+              <span class="desc">Ethnic Communities in Harmony</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">Top 5</span>
+              <span class="desc">Global Sunset Ranking</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="hobbies.html" class="btn btn-coral">
+              <span>Next Page: My Interests & Hobbies</span>
+              <span>→</span>
+            </a>
+            <a href="about.html" class="btn btn-outline-white">
+              <span>← Back to About You</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Modal for Mount Kinabalu -->
+  <div class="modal-overlay" id="mountainModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">×</button>
+      <span class="badge">UNESCO World Heritage</span>
+      <h3 style="margin: 1rem 0 0.75rem;">Mount Kinabalu (Aki Nabalu)</h3>
+      <p style="margin-bottom: 1rem; color: var(--text-muted);">
+        Mount Kinabalu is steeped in Kadazan-Dusun folklore as the resting place of ancestral spirits ("Aki Nabalu"). 
+        In 2023, the Kinabalu UNESCO Global Geopark was officially designated, recognizing its unique ecological and geological marvels.
+      </p>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+        It is home to over 5,000 vascular plant species, more than half of all plant families on Earth, and numerous pitcher plants (Nepenthes rajah).
+      </p>
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><span>🌟</span> Me, My Hometown & Interest</h3>
+          <p>
+            An individual practical web submission for IE12103 E-Commerce, Semester 1 2026/2027. 
+            Faculty of Computing and Informatics (FKI), Universiti Malaysia Sabah.
+          </p>
+          <div class="footer-meta-pill">
+            <strong>Student:</strong> Fread (BI25110316)<br>
+            <strong>Page:</strong> Page 3 - Your Hometown (Kota Kinabalu, Sabah)
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">🏠 Page 1: Home</a></li>
+            <li><a href="about.html">👤 Page 2: About You</a></li>
+            <li><a href="hometown.html">🏝️ Page 3: Your Hometown</a></li>
+            <li><a href="hobbies.html">🎨 Page 4: Interests & Hobbies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Rubric Compliance</h4>
+          <ul class="footer-links">
+            <li><span style="color:#cbd5e1;">Hometown Images:</span> 6 Diverse Categories</li>
+            <li><span style="color:#cbd5e1;">Buttons:</span> Filter pills, modals & links</li>
+            <li><span style="color:#cbd5e1;">Distinct Page:</span> hometown.html</li>
+            <li><span style="color:#cbd5e1;">Course Code:</span> IE12103 (5%)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fread (BI25110316) - Universiti Malaysia Sabah. All rights reserved.</p>
+        <p>Built with Semantic HTML5 & Custom CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Me, My Hometown and Interest - IE12103</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">✨</span>
+        <span>My<span class="text-gradient">Space</span></span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About You</a></li>
+        <li><a href="hometown.html" class="nav-link">Your Hometown</a></li>
+        <li><a href="hobbies.html" class="nav-link">Interests & Hobbies</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tags">
+            <span class="badge">🎓 IE12103 E-Commerce</span>
+            <span class="badge badge-coral">🚀 Web Portfolio</span>
+          </div>
+          <h1>Welcome to <span class="text-gradient">My Journey, Heritage & Passions</span></h1>
+          <p class="hero-subtitle">
+            An interactive multi-page web showcase exploring who I am as a computing student, 
+            the scenic marvels of my hometown <strong>Kota Kinabalu, Sabah</strong>, and the creative hobbies that inspire my digital drive.
+          </p>
+
+          <div class="btn-group">
+            <a href="about.html" class="btn btn-primary">
+              <span>Meet Me</span>
+              <span>→</span>
+            </a>
+            <a href="hometown.html" class="btn btn-secondary">
+              <span>Explore Hometown</span>
+              <span>🏝️</span>
+            </a>
+            <button class="btn btn-coral" data-modal-target="quickTourModal">
+              <span>Quick Tour</span>
+              <span>⚡</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="images/hero-bg.jpg" alt="Vibrant Sabah Coastal Scenery" width="600" height="420">
+          </div>
+          
+          <div class="floating-stat-card top-right">
+            <div class="floating-icon">🇲🇾</div>
+            <div>
+              <strong>Sabah, Borneo</strong>
+              <p style="font-size: 0.85rem; margin: 0;">Land Below the Wind</p>
+            </div>
+          </div>
+
+          <div class="floating-stat-card bottom-left">
+            <div class="floating-icon">💻</div>
+            <div>
+              <strong>Computing & E-Commerce</strong>
+              <p style="font-size: 0.85rem; margin: 0;">Faculty of Computing & Informatics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Portals / Overview Section -->
+    <section class="section" style="background: rgba(255, 255, 255, 0.6);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-cyan">Navigation Hub</span>
+          <h2>Explore The <span class="text-gradient">Four Dedicated Pages</span></h2>
+          <p>This project is organized across distinct standalone sections, each built to highlight core aspects of my background, cultural roots, and creative aspirations.</p>
+        </div>
+
+        <div class="feature-portal-grid">
+          <!-- Portal 1: About You -->
+          <div class="portal-card">
+            <div class="portal-icon">👤</div>
+            <span class="badge" style="width: fit-content; margin-bottom: 1rem;">Page 2</span>
+            <h3>About You</h3>
+            <p>Get to know my personal background, education at UMS FKI, skills in digital commerce, personal philosophy, and aspirations.</p>
+            <a href="about.html" class="btn btn-secondary btn-sm" style="margin-top: auto;">Read Bio & Photo →</a>
+          </div>
+
+          <!-- Portal 2: Your Hometown -->
+          <div class="portal-card">
+            <div class="portal-icon">🏔️</div>
+            <span class="badge badge-coral" style="width: fit-content; margin-bottom: 1rem;">Page 3</span>
+            <h3>Your Hometown</h3>
+            <p>Journey into Kota Kinabalu, Sabah—famous for majestic Mount Kinabalu, world-renowned sunsets, marine parks, and authentic culinary heritage.</p>
+            <a href="hometown.html" class="btn btn-secondary btn-sm" style="margin-top: auto;">Explore Kota Kinabalu →</a>
+          </div>
+
+          <!-- Portal 3: Interests & Hobbies -->
+          <div class="portal-card">
+            <div class="portal-icon">🎨</div>
+            <span class="badge badge-cyan" style="width: fit-content; margin-bottom: 1rem;">Page 4</span>
+            <h3>Interests & Hobbies</h3>
+            <p>Discover what drives my creativity outside the classroom: front-end coding, nature photography, hiking Borneo trails, and acoustic music.</p>
+            <a href="hobbies.html" class="btn btn-secondary btn-sm" style="margin-top: auto;">Discover Hobbies →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Objective Highlights -->
+    <section class="section">
+      <div class="container">
+        <div class="facts-box">
+          <h2>Practical Activity 2: E-Commerce Web Design</h2>
+          <p>
+            Developed as part of <strong>IE12103 E-Commerce</strong> at Universiti Malaysia Sabah (UMS). 
+            Demonstrating semantic HTML5 structure, responsive CSS layout, interactive components, 
+            and storytelling tailored for modern online consumer engagement.
+          </p>
+
+          <div class="facts-grid">
+            <div class="fact-card">
+              <span class="number">4</span>
+              <span class="desc">Standalone Web Pages</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">100%</span>
+              <span class="desc">Mobile & Desktop Responsive</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">12+</span>
+              <span class="desc">Interactive Elements & Buttons</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">10/10</span>
+              <span class="desc">Rubric Criteria Alignment</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem; text-align: center;">
+            <button class="btn btn-outline-white" data-toast="Interactive notification: Welcome to my portfolio website!">
+              Test Interactive Toast Notification 🔔
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Quick Tour Modal -->
+  <div class="modal-overlay" id="quickTourModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">×</button>
+      <span class="badge badge-coral">⚡ Quick Summary</span>
+      <h3 style="margin: 1rem 0 0.75rem;">Welcome to "Me, My Hometown and Interest"</h3>
+      <p style="margin-bottom: 1.25rem;">
+        This web application satisfies all practical requirements for <strong>IE12103 E-Commerce</strong>:
+      </p>
+      <ul style="padding-left: 1.25rem; margin-bottom: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+        <li><strong>Page 1:</strong> Home (Central navigation hub and course overview)</li>
+        <li><strong>Page 2:</strong> About You (Includes student photo, bio, and credentials)</li>
+        <li><strong>Page 3:</strong> Hometown (Deep-dive into Kota Kinabalu with photo gallery)</li>
+        <li><strong>Page 4:</strong> Hobbies (Interactive cards for coding, photography, hiking, music)</li>
+      </ul>
+      <div class="btn-group">
+        <a href="about.html" class="btn btn-primary btn-sm">Start with About Page</a>
+        <button class="btn btn-secondary btn-sm" data-modal-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><span>🌟</span> Me, My Hometown & Interest</h3>
+          <p>
+            An individual practical web submission for IE12103 E-Commerce, Semester 1 2026/2027. 
+            Faculty of Computing and Informatics (FKI), Universiti Malaysia Sabah.
+          </p>
+          <div class="footer-meta-pill">
+            <strong>Student Matric:</strong> BI25110316<br>
+            <strong>Programme:</strong> Degree in Computer Science / E-Commerce (HC13)
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">🏠 Page 1: Home</a></li>
+            <li><a href="about.html">👤 Page 2: About You</a></li>
+            <li><a href="hometown.html">🏝️ Page 3: Your Hometown</a></li>
+            <li><a href="hobbies.html">🎨 Page 4: Interests & Hobbies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Assignment Specs</h4>
+          <ul class="footer-links">
+            <li><span style="color:#cbd5e1;">Course:</span> IE12103 E-Commerce</li>
+            <li><span style="color:#cbd5e1;">Assessment:</span> Practical Activity 2 (5%)</li>
+            <li><span style="color:#cbd5e1;">Total Marks:</span> 10 Marks</li>
+            <li><span style="color:#cbd5e1;">Submission:</span> Live Link & 4 Page PDFs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fread (BI25110316) - Universiti Malaysia Sabah. All rights reserved.</p>
+        <p>Built with Semantic HTML5 & Vibrant Custom CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

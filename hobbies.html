@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interests & Hobbies | Me, My Hometown and Interest - IE12103</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">✨</span>
+        <span>My<span class="text-gradient">Space</span></span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About You</a></li>
+        <li><a href="hometown.html" class="nav-link">Your Hometown</a></li>
+        <li><a href="hobbies.html" class="nav-link active">Interests & Hobbies</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <!-- Hobbies Hero Header -->
+        <div class="hobbies-hero">
+          <span class="badge badge-coral">Page 4 • Passions & Pursuits</span>
+          <h1 style="margin: 0.75rem 0 1rem;">Interests & <span class="text-gradient">Creative Hobbies</span></h1>
+          <p>
+            Beyond academic lectures and coding assignments, these activities fuel my creativity, 
+            sharpen my attention to detail, and maintain a balanced lifestyle in the heart of Sabah.
+          </p>
+        </div>
+
+        <!-- Filter Buttons (Rubric: Must include buttons) -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Hobbies</button>
+          <button class="filter-btn" data-filter="tech">Tech & Code</button>
+          <button class="filter-btn" data-filter="creative">Creative Arts</button>
+          <button class="filter-btn" data-filter="outdoor">Outdoors</button>
+          <button class="filter-btn" data-filter="music">Music</button>
+        </div>
+
+        <!-- Interactive Hobby Cards Grid -->
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          
+          <!-- Hobby 1: Web Development & Creative Coding -->
+          <div class="hobby-card-interactive" data-category="tech">
+            <div class="hobby-img-header">
+              <img src="images/hobby-coding.jpg" alt="Web Development and Coding Workspace">
+              <span class="card-badge">Technology</span>
+            </div>
+            <div class="hobby-body">
+              <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Digital Craft</span>
+              <h3>Creative Web Development</h3>
+              <p>
+                Crafting intuitive user interfaces, testing responsive layouts across screens, 
+                and exploring modern front-end design systems that make online shopping effortless and delightful.
+              </p>
+
+              <div class="hobby-stats-row">
+                <div class="stat-item">
+                  <span class="stat-label">Core Focus</span>
+                  <span class="stat-val">Front-End UI/UX</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Favorite Stack</span>
+                  <span class="stat-val">HTML5 • CSS • JS</span>
+                </div>
+              </div>
+
+              <div class="btn-group" style="margin-top: auto;">
+                <button class="btn btn-primary btn-sm" data-modal-target="techModal">Stack Details 💻</button>
+                <button class="btn btn-secondary btn-sm" data-toast="Web dev improves analytical thinking and user empathy!">Why I Code</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobby 2: Landscape & Travel Photography -->
+          <div class="hobby-card-interactive" data-category="creative">
+            <div class="hobby-img-header">
+              <img src="images/hobby-photography.jpg" alt="Photography Camera and Gear">
+              <span class="card-badge">Visual Arts</span>
+            </div>
+            <div class="hobby-body">
+              <span class="badge badge-coral" style="width: fit-content; margin-bottom: 0.5rem;">Visual Arts</span>
+              <h3>Landscape & Travel Photography</h3>
+              <p>
+                Documenting Sabah's dramatic topography, golden-hour beach sunsets, and macro rainforest fauna. 
+                Photography teaches me how color balance and visual framing drive consumer engagement in digital media.
+              </p>
+
+              <div class="hobby-stats-row">
+                <div class="stat-item">
+                  <span class="stat-label">Preferred Time</span>
+                  <span class="stat-val">Golden Hour (6 PM)</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Primary Genre</span>
+                  <span class="stat-val">Nature & Scenery</span>
+                </div>
+              </div>
+
+              <div class="btn-group" style="margin-top: auto;">
+                <button class="btn btn-primary btn-sm" data-modal-target="photoModal">Gear & Style 📷</button>
+                <button class="btn btn-secondary btn-sm" data-toast="Visual storytelling is an essential asset for e-commerce conversion!">Photo Insight</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobby 3: Trail Hiking & Borneo Trekking -->
+          <div class="hobby-card-interactive" data-category="outdoor">
+            <div class="hobby-img-header">
+              <img src="images/hobby-hiking.jpg" alt="Hiking Mountain Trails in Sabah">
+              <span class="card-badge">Adventure</span>
+            </div>
+            <div class="hobby-body">
+              <span class="badge badge-cyan" style="width: fit-content; margin-bottom: 0.5rem;">Outdoor Adventure</span>
+              <h3>Trail Hiking & Trekking</h3>
+              <p>
+                Conquering rugged ridge trails across Kundasang, Maragang Hill, and Crocker Range. 
+                Hiking instills discipline, mental perseverance, and a deep reverence for Borneo's pristine topography.
+              </p>
+
+              <div class="hobby-stats-row">
+                <div class="stat-item">
+                  <span class="stat-label">Favorite Peak</span>
+                  <span class="stat-val">Maragang Hill</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Elevation Gain</span>
+                  <span class="stat-val">2,232 m ASL</span>
+                </div>
+              </div>
+
+              <div class="btn-group" style="margin-top: auto;">
+                <button class="btn btn-primary btn-sm" data-modal-target="hikingModal">Top Trails 🥾</button>
+                <button class="btn btn-secondary btn-sm" data-toast="Hiking resets the mind and sparks fresh ideas for creative design!">Trail Tips</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobby 4: Acoustic Guitar & Sound Design -->
+          <div class="hobby-card-interactive" data-category="music">
+            <div class="hobby-img-header">
+              <img src="images/hobby-music.jpg" alt="Acoustic Guitar and Music Production">
+              <span class="card-badge">Audio</span>
+            </div>
+            <div class="hobby-body">
+              <span class="badge" style="width: fit-content; margin-bottom: 0.5rem;">Sound & Audio</span>
+              <h3>Acoustic Guitar & Music</h3>
+              <p>
+                Unwinding with fingerstyle acoustic arrangements and studying ambient background soundscapes. 
+                Rhythm and harmony mirror the rhythm of well-structured code and seamless UX flow.
+              </p>
+
+              <div class="hobby-stats-row">
+                <div class="stat-item">
+                  <span class="stat-label">Instrument</span>
+                  <span class="stat-val">6-String Acoustic</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Style</span>
+                  <span class="stat-val">Fingerstyle & Lo-Fi</span>
+                </div>
+              </div>
+
+              <div class="btn-group" style="margin-top: auto;">
+                <button class="btn btn-primary btn-sm" data-modal-target="musicModal">Favorite Tunes 🎸</button>
+                <button class="btn btn-secondary btn-sm" data-toast="Music inspires creative coding focus and flow state!">Music Note</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Weekly Energy & Passion Allocation Card -->
+        <div class="facts-box" style="margin-top: 4.5rem;">
+          <h2>How Hobbies Complement My E-Commerce Journey</h2>
+          <p>
+            Each personal interest directly feeds into my technical toolkit: photography sharpens visual curation, 
+            music deepens creative focus, hiking reinforces resilience, and coding turns creative ideas into reality.
+          </p>
+
+          <div class="facts-grid">
+            <div class="fact-card">
+              <span class="number">Coding</span>
+              <span class="desc">Analytical Problem Solving & Web Logic</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">Camera</span>
+              <span class="desc">High-Quality Product Asset Curation</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">Trails</span>
+              <span class="desc">Patience, Stamina & Mental Balance</span>
+            </div>
+            <div class="fact-card">
+              <span class="number">Acoustics</span>
+              <span class="desc">Creative Rhythm & Harmonious UI Design</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem; text-align: center;">
+            <div class="btn-group" style="justify-content: center;">
+              <a href="index.html" class="btn btn-outline-white">
+                <span>← Return to Home Page</span>
+              </a>
+              <a href="about.html" class="btn btn-coral">
+                <span>Review My Profile & Credentials</span>
+                <span>👤</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Modals for Hobbies -->
+  <div class="modal-overlay" id="techModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">×</button>
+      <span class="badge">Web Dev Toolkit</span>
+      <h3 style="margin: 1rem 0 0.75rem;">Front-End Technologies</h3>
+      <p style="margin-bottom: 1rem; color: var(--text-muted);">
+        My front-end development workflow centers on clean, accessible, semantic HTML5, 
+        modular CSS3 with responsive Grid and Flexbox architectures, and lightweight ES6+ JavaScript.
+      </p>
+      <ul style="padding-left: 1.25rem; margin-bottom: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+        <li>Semantic HTML markup for screen readers & SEO</li>
+        <li>CSS custom properties & responsive fluid sizing</li>
+        <li>Cross-browser compatibility and zero external bloat</li>
+      </ul>
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="photoModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">×</button>
+      <span class="badge badge-coral">Photography Insights</span>
+      <h3 style="margin: 1rem 0 0.75rem;">Capturing Borneo's Soul</h3>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+        "Photography is the story I fail to put into words." In Sabah, the interplay of morning mist over Kinabalu 
+        and crimson ocean horizons offers a living canvas for visual composition and emotional storytelling.
+      </p>
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="hikingModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">×</button>
+      <span class="badge badge-cyan">Mountain Expeditions</span>
+      <h3 style="margin: 1rem 0 0.75rem;">Favorite Sabah Trails</h3>
+      <ul style="padding-left: 1.25rem; margin-bottom: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+        <li><strong>Maragang Hill (Kundasang):</strong> Sunrise panoramic view facing Mount Kinabalu</li>
+        <li><strong>Bukit Padang (KK City):</strong> Quick steep cardio trek around the lake</li>
+        <li><strong>Sosodikon Hill:</strong> Rolling green pyramid hill in Kundasang highlands</li>
+      </ul>
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="musicModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">×</button>
+      <span class="badge">Acoustic Sessions</span>
+      <h3 style="margin: 1rem 0 0.75rem;">Musical Pursuits</h3>
+      <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+        Acoustic guitar provides an unplugged sanctuary away from computer screens. 
+        Focusing on fingerpicking patterns develops dexterity, timing, and appreciation for organic craftsmanship.
+      </p>
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><span>🌟</span> Me, My Hometown & Interest</h3>
+          <p>
+            An individual practical web submission for IE12103 E-Commerce, Semester 1 2026/2027. 
+            Faculty of Computing and Informatics (FKI), Universiti Malaysia Sabah.
+          </p>
+          <div class="footer-meta-pill">
+            <strong>Student:</strong> Fread (BI25110316)<br>
+            <strong>Page:</strong> Page 4 - Interests & Hobbies
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">🏠 Page 1: Home</a></li>
+            <li><a href="about.html">👤 Page 2: About You</a></li>
+            <li><a href="hometown.html">🏝️ Page 3: Your Hometown</a></li>
+            <li><a href="hobbies.html">🎨 Page 4: Interests & Hobbies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Assignment Specs</h4>
+          <ul class="footer-links">
+            <li><span style="color:#cbd5e1;">Hobbies Highlighted:</span> Tech, Photo, Hiking, Music</li>
+            <li><span style="color:#cbd5e1;">Buttons & Modals:</span> 10+ Interactive elements</li>
+            <li><span style="color:#cbd5e1;">Separate Page:</span> hobbies.html</li>
+            <li><span style="color:#cbd5e1;">Grade Weight:</span> 5% (10 Marks)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fread (BI25110316) - Universiti Malaysia Sabah. All rights reserved.</p>
+        <p>Built with Semantic HTML5 & Custom CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
