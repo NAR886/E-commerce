@@ -415,7 +415,9 @@ img {
   align-items: center;
   justify-content: center;
   color: #060911;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
   box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
 }
 
