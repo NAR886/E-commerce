@@ -45,14 +45,8 @@ All 4 pages have been rendered and saved as standalone PDFs in this folder:
 
 ---
 
-### 🖼️ How to Upload Your Own Profile Picture Later
-Whenever you have your personal photo ready:
-1. Save your photo as `profile.jpg`.
-2. Copy and replace it into the `images/profile.jpg` file.
-3. Commit and push:
-   ```bash
-   git add images/profile.jpg
-   git commit -m "update: student personal photo"
-   git push origin main
-   ```
-4. GitHub Pages will automatically update with your photo!
+### 🛠️ Technology Stack & Architecture
+- **Markup & Semantics:** HTML5 (Accessible and mobile-first)
+- **Styling & Effects:** Custom CSS3 with Cyber Dark Neon palette and responsive Flexbox / CSS Grid
+- **Interactivity:** Vanilla JavaScript (ES6+) for category filters, interactive modals, toasts, and dynamic canvas particle animations
+- **Asset Optimization:** Hand-crafted, compressed, and responsive media assets for fast load performance

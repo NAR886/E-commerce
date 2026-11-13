@@ -1,3 +1,13 @@
+# OS generated files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Temporary and log files
 *.tmp
+*.log
+*.bak
+*.swp
+
+# Temporary build or test scripts
+*.ps1
