@@ -1,31 +1,40 @@
 # IE12103 E-Commerce — Practical Activity 2
 ## Topic: "Me, My Hometown and Interest" Website
 
-- **Student Name:** Fread
+- **Full Name:** Freadenly Zulkilfi
+- **Nickname:** Fread
 - **Matric Number:** BI25110316
-- **Faculty:** Faculty of Computing and Informatics (FKI), Universiti Malaysia Sabah (UMS)
-- **Programme:** Degree HC13 (Computer Science / E-Commerce)
+- **Faculty:** Faculty of Computing and Informatics (FKI) at UMSKAL
+- **Programme:** Bachelor of Information Technology with Honours (Business Computing) [HC13]
 - **Course Code:** IE12103 E-Commerce (Semester 1 2026/2027)
+- **Hometown:** Beaufort, Sabah
+- **Hobbies:** Gaming, Coding, Video & Graphic Editing, Playing Rollerblade
 - **Grade Weight:** 5% (10 Marks)
 
 ---
 
-### 📂 Project Structure & Four Standalone Pages
-
-1. **Page 1 (Home):** [`index.html`](index.html)
-   - Interactive hero banner, navigation hub, quick overview cards to the other 3 pages, course alignment facts, interactive modal & notifications.
-2. **Page 2 (About You):** [`about.html`](about.html)
-   - Student portrait photograph, academic information pills (Name, Matric, Faculty, Degree), core competencies & skills, learning milestones timeline, interactive philosophy modal.
-3. **Page 3 (Your Hometown):** [`hometown.html`](hometown.html)
-   - Kota Kinabalu, Sabah highlights. Interactive filter buttons (Nature, Coastline, City, Cuisine), 6 curated image cards (Mount Kinabalu, Tanjung Aru Beach, City Waterfront, Borneo Rainforest, Local Cuisine, Tunku Abdul Rahman Marine Park), fast facts summary, and lore modals.
-4. **Page 4 (Interests & Hobbies):** [`hobbies.html`](hobbies.html)
-   - 4 in-depth hobbies (Web Development, Landscape Photography, Trail Hiking, Acoustic Music), interactive category filters, statistic pills, tech stack modals, and toast triggers.
+### 🌐 Live Website Submission Link
+Once GitHub Pages is enabled on this repository, your live URL is:
+👉 **https://nar886.github.io/E-commerce/**
 
 ---
 
-### 📄 Generated Submission PDFs
+### 📂 Four Dedicated Standalone Pages
 
-Per the assignment instructions, all 4 pages have been rendered and saved as standalone PDFs in this folder:
+1. **Page 1 (Home):** [`index.html`](index.html)
+   - Welcome banner, navigation hub, quick overview cards to the other 3 pages, course alignment facts, interactive modal & notifications.
+2. **Page 2 (About You):** [`about.html`](about.html)
+   - Student portrait photograph, academic information pills (Name, Matric, Faculty, Degree at UMSKAL), core competencies & skills, learning milestones timeline, interactive philosophy modal.
+3. **Page 3 (Your Hometown):** [`hometown.html`](hometown.html)
+   - Beaufort, Sabah highlights: Sabah State Railway & Station, famous Beaufort Mee, Padas River White Water Rafting, Klias Wetland River Safaris, Weston Wetland sunset, and Padas River lifeline.
+4. **Page 4 (Interests & Hobbies):** [`hobbies.html`](hobbies.html)
+   - 4 customized hobbies: **Gaming**, **Coding**, **Video & Graphic Editing**, and **Playing Rollerblade**, with interactive category filters, statistic pills, and detail modals.
+
+---
+
+### 📄 Submission PDF Files
+
+All 4 pages have been rendered and saved as standalone PDFs in this folder:
 - `homepage.pdf`
 - `aboutyou.pdf`
 - `hometown.pdf`
@@ -35,16 +44,14 @@ Per the assignment instructions, all 4 pages have been rendered and saved as sta
 
 ---
 
-### 🌐 How to Publish & Get Your Live Website URL (Pick One)
-
-#### Option A: Netlify Drop (Fastest — 30 seconds, Free)
-1. Go to [https://app.netlify.com/drop](https://app.netlify.com/drop)
-2. Drag and drop this entire `My website` folder onto the page.
-3. Netlify will instantly provide a live HTTPS URL (e.g., `https://fread-portfolio.netlify.app`).
-4. Copy and paste this URL into your iTEL submission.
-
-#### Option B: GitHub Pages (Free & Professional)
-1. Create a public repository on GitHub (e.g. `e-commerce-portfolio`).
-2. Push or upload these files (`index.html`, `about.html`, `hometown.html`, `hobbies.html`, `css/`, `js/`, `images/`).
-3. In GitHub repo **Settings** > **Pages**, choose the `main` branch and click **Save**.
-4. Your website will be live at `https://<username>.github.io/<repo-name>/`.
+### 🖼️ How to Upload Your Own Profile Picture Later
+Whenever you have your personal photo ready:
+1. Save your photo as `profile.jpg`.
+2. Copy and replace it into the `images/profile.jpg` file.
+3. Commit and push:
+   ```bash
+   git add images/profile.jpg
+   git commit -m "update: student personal photo"
+   git push origin main
+   ```
+4. GitHub Pages will automatically update with your photo!
